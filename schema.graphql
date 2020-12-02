@@ -1,0 +1,51 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+  query: RootQuery
+  mutation: RootMutation
+}
+
+type Employee {
+  createdDate: DateTime
+  currentSalary: String
+  department: String
+  email: String!
+  firstName: String!
+  id: ID
+  lastName: String!
+  startDate: DateTime
+  user: User
+}
+
+type RootMutation {
+  addEmployee(email: String, firstName: String, lastName: String): Employee
+  addUser(email: String!, firstName: String!, lastName: String!, password: String!): User
+  deleteEmployee(id: ID): Employee
+  deleteUser(id: ID): User
+  updateEmployee(email: String, firstName: String, id: ID, lastName: String, userId: ID): Employee
+  updateUser(email: String, firstName: String, id: ID, lastName: String, password: String): User
+}
+
+type RootQuery {
+  employee(id: ID): Employee
+  employees(department: String): [Employee]
+  user(id: ID): User
+  users(department: String): [User]
+}
+
+type User {
+  createdDate: DateTime
+  department: String
+  email: String!
+  employees: [Employee]
+  firstName: String!
+  id: ID
+  lastName: String!
+  password: String!
+  role: String
+  startDate: DateTime
+}
+
+
+"A date-time string at UTC, such as 2007-12-03T10:15:30Z, compliant with the `date-time` format outlined in section 5.6 of the RFC 3339 profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar."
+scalar DateTime

@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["./src/components"],
+      "@components/*": ["./src/components/*"],
+      "@layout": ["./src/layout"],
+      "@layout/*": ["./src/layout/*"],
+      "@graphql": ["./src/graphql"],
+      "@graphql/*": ["./src/graphql/*"],
+      "@requests": ["./src/graphql/requests"],
+      "@requests/*": ["./src/graphql/requests/*"],
+      "@icons": ["./src/components/icons"],
+      "@icons/*": ["./src/components/icons/*"],
+      "@styles": ["./src/styles"],
+      "@styles/*": ["./src/styles/*"],
+      "@utils": ["./src/utils"],
+      "@utils/*": ["./src/utils/*"],
+      "@layoutComponents": ["./src/layout/internal"],
+      "@layoutComponents/*": ["./src/layout/internal/*"],
+      "@context": ["./src/context"],
+      "@context/*": ["./src/context/*"], 
+      "@interface": ["./src/interface"],
+      "@interface/*": ["./src/interface/*"],
+      "@locales": ["./src/locales"],
+      "@locales/*": ["./src/locales/*"],
+      "@pages": ["./src/pages"],
+      "@pages/*": ["./src/pages/*"],
+      "@assets": ["./src/assets"],
+      "@assets/*": ["./src/assets/*"]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+  ]
+}

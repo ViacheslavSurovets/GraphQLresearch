@@ -1,0 +1,23 @@
+{
+    "data": {
+        "header" : {
+            "mainTitle": "GraphQL Research"
+        },
+      "pages": {
+        "employees": {
+          "addEmployeeButton": "Add Employee And Refetch"
+        }
+      },
+      "menu": {
+        "li": {
+          "instances": {
+            "title": "Instances",
+            "ul": {
+              "employee": "Employee",
+              "user": "User"
+            }
+          } 
+        }
+      }
+    }
+}
